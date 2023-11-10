@@ -1,0 +1,10 @@
+name: SorteringsAlgo
+version: '${project.version}'
+main: ntk.notekri.sorteringsalgo.SorteringsAlgo
+commands:
+  fuck:
+    usage: /bitch
+    description: Suck a fat one (._.)
+  quicksort:
+    usage: /sortshit
+    description: Sorter lortet
