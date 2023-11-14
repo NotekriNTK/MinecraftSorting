@@ -3,6 +3,7 @@ package ntk.notekri.sorteringsalgo.listeners;
 import ntk.notekri.sorteringsalgo.Handler;
 import ntk.notekri.sorteringsalgo.SorteringsAlgo;
 import ntk.notekri.sorteringsalgo.sorteringslogik.SortingQuick;
+import ntk.notekri.sorteringsalgo.sorteringslogik.TowerOfHanoi;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -39,6 +40,11 @@ public class Cmds implements CommandExecutor {
             return true;
         }
 
+        if (label.equalsIgnoreCase("hanoi")){
+            player.sendMessage("Will now sort Tower of Hanoi");
+            TowerOfHanoi.towerOfHanoi(player, main);
+            return true;
+        }
         return true;
     }
 
@@ -46,5 +52,6 @@ public class Cmds implements CommandExecutor {
     private void setup(){
         main.getCommand("fuck").setExecutor(this);
         main.getCommand("quicksort").setExecutor(this);
+        main.getCommand("hanoi").setExecutor(this);
     }
 }

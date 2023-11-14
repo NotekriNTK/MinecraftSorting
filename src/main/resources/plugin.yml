@@ -8,3 +8,6 @@ commands:
   quicksort:
     usage: /quicksort
     description: Sorter lortet
+  hanoi:
+    usage: /hanoi
+    description: Hanoi
